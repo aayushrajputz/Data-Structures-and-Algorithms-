@@ -30,5 +30,6 @@ function majorityElement(nums) {
 }
 
 // --- Test Cases ---
-console.log("Majority (3,2,3):", majorityElement([3, 2, 3])); // Output: 3
+console.log("Majority (3,5,1):", majorityElement([3, 2, 3])); // Output: 3
 console.log("Majority (2,2,1,1,1,2,2):", majorityElement([2, 2, 1, 1, 1, 2, 2])); // Output: 2
+
