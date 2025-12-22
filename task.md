@@ -48,9 +48,19 @@
 - [x] **K Distinct Characters** (LeetCode 340) ✅
 - [x] **Subarray Sum Equals K** (Count & Max variations) ✅
 
-### Day 6: Binary Search (O(log n) Domination) [Next Focus] 🔍
-- [ ] **Concept:** Search Space Reduction (`low`, `high`, `mid`)
-- [ ] **Problem:** Binary Search on Sorted Array
-- [ ] **Problem:** Find First and Last Position of Element (LeetCode 34)
-- [ ] **Problem:** Search in Rotated Sorted Array (LeetCode 33) 🔥
-- [ ] **Problem:** Peak Index in a Mountain Array (LeetCode 852)
+### Day 7: Binary Search (O(log n) Domination) [Today's Focus] 🔍
+- [x] **Concept:** Search Space Reduction (`low`, `high`, `mid`)
+- [x] **Problem:** Binary Search on Sorted Array
+- [x] **Problem:** Find First and Last Position of Element (LeetCode 34)
+- [x] **Problem:** Search in Rotated Sorted Array (LeetCode 33) 🔥✅
+- [x] **Problem:** Peak Index in a Mountain Array (LeetCode 852) ✅
+- [x] **Problem:** Koko Eating Bananas (LeetCode 875) 🍌✅
+
+## The Bhai/Coach Protocol (DO NOT FORGET)
+1. **Pattern First:** Coach will explain the general approach/pattern.
+2. **Paper Dry Run:** User will dry run on physical notebook/pen.
+3. **Logic Sync:** User explains logic in chat, Coach gives hints (NO CODE).
+4. **Implementation:** User writes code in file, Coach reviews/debugs.
+5. **Senior Mode:** Sundays are Strict Senior Razorpay Mock days.
+6. **Target:** Most asked product-based company questions (FAANG/Tier-1 Startups).
+7. **Language Protocol:** Patterns will be explained in pure/simple Hindi for deep understanding, but Technical English terms (interview-ready) will be taught and used alongside.
