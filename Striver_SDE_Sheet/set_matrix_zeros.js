@@ -1,12 +1,12 @@
-/**
- * Striver SDE Sheet - Problem 1: Set Matrix Zeroes
- * LeetCode 73
- * 
- * Logic:
- * 1. Find cells that are 0.
- * 2. Mark their rows and columns.
- * 3. Update the matrix based on markings.
- */
+// // /
+//  * Striver SDE Sheet - Problem 1: Set Matrix Zeroes
+//  * LeetCode 73
+//  * 
+//  * Logic:
+//  * 1. Find cells that are 0.
+//  * 2. Mark their rows and columns.
+//  * 3. Update the matrix based on markings.
+//  */
 
 function setZeroes(matrix) {
     let m = matrix.length;
