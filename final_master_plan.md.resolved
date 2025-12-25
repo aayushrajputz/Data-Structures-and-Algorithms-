@@ -10,16 +10,18 @@ Before any code, we master **Big O Notation**.
 
 ## Part 2: The "Grind" Schedule (Daily)
 
-| Time | Activity | Goal |
-| :--- | :--- | :--- |
-| **08:00 AM - 12:00 PM** | **DSA Morning Session (4 Hrs)** | Lean 1 New Concept + Solve 3-4 Medium Problems |
-| **04:00 PM - 06:00 PM** | **LLD Practice (Jan Onwards)** | Design Patterns + Solid Principles in TypeScript |
-| **07:00 PM - 09:00 PM** | **BinaryPDF Dev (2 Hrs)** | Build 1 Core Feature (Keep the project alive) |
-| **09:30 PM - 11:30 PM** | **DSA Night Session (2 Hrs)** | Revision + Solve 2-3 Previous Problems (Spaced Repetition) |
+| Time | Activity | Goal | Notes |
+| :--- | :--- | :--- | :--- |
+| **08:00 AM - 12:00 PM** | **DSA Morning Session (Striver Sheet)** | Master 1 Pattern + Phod 3-4 Elite Problems |
+| **4:00 PM - 6:00 PM** | **Go Backend Mastery** | System Design + Concurrency + Architecture (Monolith to Micro) |
+| **08:00 PM - 11:00 PM** | **Performance Engineering** | Apply Go Concepts to BinaryPDF + Problem Solving Revision |
 
-**Total Daily Output:** ~6-7 Problems + LLD + Dev.
-**Monthly Output:** ~180 Problems + Design Patterns.
-**3 Month Output:** ~540 Problems (Goal Smashed + Industry Ready).
+**Total Daily Output:** ~6-7 Elite Problems + Industry Level Backend Engineering.
+**Monthly Output:** Phase 1 SDE Sheet Completed + Microservices Architecture Mastered.
+**Target Launchpad:** 18-24 LPA (Product Based Companies - SDE 1) .
+**Ultimate Goal:** European Remote / Tier-1 Startups (70 + LPA)   .   
+
+
 
 ---
 
@@ -39,10 +41,11 @@ Before any code, we master **Big O Notation**.
 4.  **Searching & Sorting:** (30 Questions)
     *   **Patterns:** Binary Search on Answer (Monotonic Space), Merge Sort Logic (Divide & Conquer).
 
-### Month 2: The Logic & LLD - JANUARY
-**LLD (Low Level Design) Focus:** (Daily 4PM - 6PM)
-*   **Concepts:** SOLID Principles, Design Patterns (Factory, Singleton, Observer, Strategy).
-*   **Projects:** Parking Lot, Library Management, Hotel Booking System (in TypeScript).
+### Month 2: Architecture & Elite Backend - JANUARY
+**Go Backend Engineering Focus:** (Daily 4PM - 6PM)
+*   **Concepts:** Monolith vs Microservices, gRPC, Redis Distributed Locking, Goroutiune Best Practices.
+*   **Engineering:** Advanced Concurrency, Memory Management, Rate Limiting (Redis), Auth Flow (JWT/OAuth Deep Dive).
+
 
 5.  **Linked Lists:** (30 Questions)
     *   **Patterns:** Fast & Slow Pointer (Cycle Detection), Dummy Node, Reversal.
