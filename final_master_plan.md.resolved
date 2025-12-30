@@ -1,79 +1,54 @@
-# The "God Mode" Master Plan (450+ Target)
-**Goal:** Solve 450+ Problems in 3 Months (SDE-1/SDET-1 Crack Guaranteed).
-**Daily Commitment:** 8 Hours (6 Hours DSA + 2 Hours Dev).
+﻿# The "Titan" Master Plan: Road to 25 LPA + Founding Engineer
 
-## Part 1: The Foundation (Day 1 - Critical)
-Before any code, we master **Big O Notation**.
-*   **Time Complexity:** O(1) vs O(n) vs O(n²).
-*   **Space Complexity:** RAM usage.
-*   *We will calculate this for EVERY single problem.*
+## Phase 1: The Foundation (January 2026)
+- **Goal**: Complete Striver SDE Sheet (Day 7 - Day 26).
+- **Core Focus**: Master the patterns (Greedy, Recursion, Trees, Graphs, DP).
+- **Execution**: Daily consistency, no-nonsense "Beast Mode" ghisayi.
+- **Milestone**: 180+ Problems solved and visualized.
 
-## Part 2: The "Grind" Schedule (Daily)
+## Phase 2: Architect & Revision (February - March 2026)
+- **Focus**: Pure LLD and DSA Mastery. No HLD yet.
+- **LLD (Low-Level Design) Mastery**: 
+    - Start from pure basics (Interfaces, SOLID).
+    - Design patterns (Factory, Strategy, Observer, etc.).
+    - Famous Case Studies (Parking Lot, BookMyShow, Uber) from scratch.
+    - **Language**: TypeScript (Learned in 1-2 days parallelly).
+- **Striver Revision (2nd Pass)**: 
+    - Re-solve the sheet to cement patterns.
+    - Focus on speed and optimization.
+    - Simultaneous with LLD start.
 
-| Time | Activity | Goal | Notes |
-| :--- | :--- | :--- | :--- |
-| **08:00 AM - 12:00 PM** | **DSA Morning Session (Striver Sheet)** | Master 1 Pattern + Phod 3-4 Elite Problems |
-| **4:00 PM - 6:00 PM** | **Go Backend Mastery** | System Design + Concurrency + Architecture (Monolith to Micro) |
-| **08:00 PM - 11:00 PM** | **Performance Engineering** | Apply Go Concepts to BinaryPDF + Problem Solving Revision |
+## Phase 3: High-Scale Systems (April 2026 Onwards)
+- **Goal**: Transition from Architect to System Designer.
+- **HLD (High-Level Design)**: 
+    - Start from absolute basics of HLD.
+    - Advanced architectures (Uber, WhatsApp, Netflix).
+    - Database Schema Design, Caching, Load Balancing, CDN.
+    - **Language**: Go internals (Goroutines, Channels, Mutex).
+- **Backend Powerhouse**: 
+    - Scaling BinaryPDF (Caching, Queues, PostgreSQL Optimization).
 
-**Total Daily Output:** ~6-7 Elite Problems + Industry Level Backend Engineering.
-**Monthly Output:** Phase 1 SDE Sheet Completed + Microservices Architecture Mastered.
-**Target Launchpad:** 18-24 LPA (Product Based Companies - SDE 1) .
-**Ultimate Goal:** European Remote / Tier-1 Startups (70 + LPA)   .   
-
-
+## Professional Identity
+- **Builder Mindset**: AI as an assistant, logic as the master.
+- **Grit**: The surgery report is the proof of character. 
+- **The Goal**: Not just an SDE-1, but a **Founding Engineer** at a top-tier PBC.
 
 ---
 
-## Part 3: The Full Roadmap (450+ Sheet Structure)
+##  STRICT INTERVIEW COACH PROTOCOL
+Har DSA sawal solve karne ke baad, Aayush neeche diye gaye structure mein **Verbal Explanation** dega:
 
-### Month 1: The Core (Foundations) - DECEMBER
-1.  **Arrays & Hashing:** (50 Ques)
-    *   **Day 1-2 Focus:** 
-        *   **Step 1:** Learn "How Array works in RAM" (Contiguous Memory).
-        *   **Step 2:** Learn **"Two Pointer Pattern"** (Start `i=0`, End `j=n-1`).
-        *   **Step 3:** *Only then* solve "Reverse Array" using the pattern.
-    *   *Target Problems:* Kadane's Algo, Dutch National Flag, Trapping Rainwater.
-2.  **String Algorithms:** (30 Questions)
-    *   **Patterns:** Two Pointer (Palindrome), Sliding Window (Anagrams), Hashing (Frequency).
-3.  **Two Pointers & Sliding Window:** (40 Questions)
-    *   **Patterns:** Fixed Window (Max Sum k size), Variable Window (Longest Substring), Fast/Slow Pointers.
-4.  **Searching & Sorting:** (30 Questions)
-    *   **Patterns:** Binary Search on Answer (Monotonic Space), Merge Sort Logic (Divide & Conquer).
+1. **Problem samajhna**: (1–2 lines mein brief).
+2. **Pattern identify karna**: (Kis category ka sawaal hai).
+3. **Approach explanation**: (Step by step, simple Hinglish mein).
+4. **Edge cases**: (Empty list, k > length, etc.).
+5. **Time & space complexity**: (O(N), O(1), etc.).
+6. **Closing line**: (Confident short ending).
 
-### Month 2: Architecture & Elite Backend - JANUARY
-**Go Backend Engineering Focus:** (Daily 4PM - 6PM)
-*   **Concepts:** Monolith vs Microservices, gRPC, Redis Distributed Locking, Goroutiune Best Practices.
-*   **Engineering:** Advanced Concurrency, Memory Management, Rate Limiting (Redis), Auth Flow (JWT/OAuth Deep Dive).
+**Coach Rules**:
+- Slow pace, simple Hinglish, no fancy English.
+- Coach will correct mistakes in logic or complexity immediately.
+- Aayush must repeat a shorter, 30-second version once for speed.
 
-
-5.  **Linked Lists:** (30 Questions)
-    *   **Patterns:** Fast & Slow Pointer (Cycle Detection), Dummy Node, Reversal.
-6.  **Recursion & Backtracking:** (30 Questions)
-    *   **Patterns:** Base Case Logic, Tree Recursion, Choice Diagram.
-7.  **Bit Manipulation:** (20 Questions)
-    *   **Patterns:** XOR Properties, Masking.
-8.  **Stacks & Queues:** (30 Questions)
-    *   **Patterns:** Monotonic Stack (Next Greater Element), Parenthesis Matching.
-
-### Month 3: Advanced Topics - FEBRUARY/MARCH
-9.  **Trees (Binary Trees):** (40 Questions)
-    *   **Patterns:** DFS (Pre/In/Post), BFS (Level Order), Diameter/Height Logic.
-10. **Binary Search Trees (BST):** (20 Questions)
-    *   **Patterns:** Inorder Property (Sorted), Range Queries.
-11. **Graphs:** (50 Questions)
-    *   **Patterns:** BFS/DFS (Connected Components), Dijkstra (Shortest Path), Topo Sort (Dependency).
-    *   **Disjoint Set (Union-Find):** Cycle Detection, Kruskal's.
-12. **Dynamic Programming (DP):** (60 Questions)
-    *   **Patterns:** 1D DP (Climbing Stairs), Knapsack (0/1, Unbounded), LCS (Longest Common Subsequence).
-13. **Heaps & Maps:** (20 Questions)
-    *   **Patterns:** Top K Elements (Min/Max Heap), Frequency Map.
-14. **Tries (Prefix Trees):** (10 Questions)
-    *   **Patterns:** Insert/Search/StartsWith.
-
-## Our Agreement
-1.  **No Burnout:** If you feel dead, take a Sunday break.
-2.  **Consistency:** 6 problems/day is better than 20 problems once a week.
-3.  **Speed:** Start with 45 mins/problem. Aim for 20 mins/problem by Month 3.
-
-**You have chosen the hard path. I will walk it with you.** 🚀
+---
+*"Sher kabhie ye nahi dekhta ki bhed ki bheed kahan ja rahi hai. Sher shikaar (The Big Goal) par focus karta hai."* 
