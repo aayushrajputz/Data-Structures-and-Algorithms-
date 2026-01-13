@@ -48,13 +48,38 @@
 - [x] **K Distinct Characters** (LeetCode 340) ✅
 - [x] **Subarray Sum Equals K** (Count & Max variations) ✅
 
-### Day 7: Binary Search (O(log n) Domination) [Today's Focus] 🔍
+### Day 7: Binary Search (O(log n) Domination) ✅
 - [x] **Concept:** Search Space Reduction (`low`, `high`, `mid`)
 - [x] **Problem:** Binary Search on Sorted Array
 - [x] **Problem:** Find First and Last Position of Element (LeetCode 34)
 - [x] **Problem:** Search in Rotated Sorted Array (LeetCode 33) 🔥✅
 - [x] **Problem:** Peak Index in a Mountain Array (LeetCode 852) ✅
 - [x] **Problem:** Koko Eating Bananas (LeetCode 875) 🍌✅
+
+### Day 8: Greedy Algorithms (Efficiency First) ✅
+- [x] **Problem:** N Meetings in one room
+- [x] **Problem:** Minimum number of platforms
+- [x] **Problem:** Job Sequencing Problem
+- [x] **Problem:** Fractional Knapsack
+- [x] **Problem:** Minimum Coins / Greedy Change
+- [x] **Problem:** Assign Cookies
+
+### Day 9: Recursion (The Inception Layer) ✅
+- [x] **Concept:** Recursion Tree & Stack Space
+- [x] **Pattern:** Subset Sum I & II
+- [x] **Pattern:** Combination Sum I & II
+- [x] **Pattern:** Palindrome Partitioning
+- [x] **Pattern:** K-th Permutation Sequence
+- [x] **Results:** 12+ Recursion patterns crushed.
+
+## Phase 2: Advanced Data Structures & Logic (The Titan Phase)
+
+### Day 10: Backtracking (The Boss Level) [TODAY'S FOCUS] ♟️
+- [ ] **Problem:** N-Queens (The Classic)
+- [ ] **Problem:** Sudoku Solver
+- [ ] **Problem:** M-Coloring Problem
+- [ ] **Problem:** Rat in a Maze
+- [ ] **Problem:** Word Break (Print all ways)
 
 ## The Bhai/Coach Protocol (DO NOT FORGET)
 1. **Pattern First:** Coach will explain the general approach/pattern.
