@@ -34,7 +34,7 @@ var addTwoNumbers = function (l1, l2) {
     return dummy.next;
 };
 
-// Helpers
+// 
 function createLL(arr) {
     if (arr.length === 0) return null;
     let head = new ListNode(arr[0]);
@@ -47,7 +47,7 @@ function createLL(arr) {
 }
 
 function printLL(head) {
-    let curr = head;
+    let curr head;
     let res = [];
     while (curr) {
         res.push(curr.val);
