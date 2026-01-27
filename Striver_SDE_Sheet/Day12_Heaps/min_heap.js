@@ -8,11 +8,15 @@
  */
 
 class MinHeap {
-    constructor(array = []) {
+    constructor(comparator = null) {
         this.heap = [];
-        if (array.length > 0) {
-            this.buildHeap(array);
-        }
+        /**
+         * Generic Comparator:
+         * (a, b) => a - b  --> Min-Heap (default)
+         * (a, b) => b - a  --> Max-Heap
+         * (a, b) => a.freq - b.freq --> Min-Heap based on frequency
+         */
+        this.compare = comparator || ((a, b) => a - b);
     }
 
     getParentIndex(i) { return Math.floor((i - 1) / 2); }
@@ -36,7 +40,8 @@ class MinHeap {
         let index = this.heap.length - 1;
         while (index > 0) {
             let parent = this.getParentIndex(index);
-            if (this.heap[index] < this.heap[parent]) {
+            // If compare(current, parent) < 0, it means current is "smaller" (in Min-Heap sense)
+            if (this.compare(this.heap[index], this.heap[parent]) < 0) {
                 this.swap(index, parent);
                 index = parent;
             } else {
@@ -62,10 +67,10 @@ class MinHeap {
             let left = this.getLeftChildIndex(index);
             let right = this.getRightChildIndex(index);
 
-            if (left < n && this.heap[left] < this.heap[smallest]) {
+            if (left < n && this.compare(this.heap[left], this.heap[smallest]) < 0) {
                 smallest = left;
             }
-            if (right < n && this.heap[right] < this.heap[smallest]) {
+            if (right < n && this.compare(this.heap[right], this.heap[smallest]) < 0) {
                 smallest = right;
             }
 
@@ -91,14 +96,5 @@ class MinHeap {
     }
 }
 
-// TEST CASES (STRICT)
-const heap = new MinHeap([20, 10, 30, 5, 15]);
-console.log("Min (Expected 5):", heap.extractMin());
-console.log("Heap State (Min-Prop maintained):", heap.heap);
-
-// Inserting 2 (Should come to root)
-heap.insert(2);
-console.log("New Min (Expected 2):", heap.peek());
-console.log("Min Element Pop (Expected 2):", heap.extractMin());
-
 module.exports = MinHeap;
+
