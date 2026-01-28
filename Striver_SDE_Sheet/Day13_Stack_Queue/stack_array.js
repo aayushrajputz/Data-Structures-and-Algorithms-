@@ -41,7 +41,6 @@ class MyStack {
         return this.top === -1;
     }
 }
-
 // Test It:
 const stack = new MyStack(5);
 stack.push(10);
@@ -50,3 +49,4 @@ stack.push(30);
 console.log("Top Element:", stack.peek()); // Expected: 30
 console.log("Popped:", stack.pop());       // Expected: 30
 console.log("New Top:", stack.peek());    // Expected: 20
+
