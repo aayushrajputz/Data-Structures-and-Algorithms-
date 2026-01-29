@@ -86,6 +86,6 @@
 2. **Paper Dry Run:** User will dry run on physical notebook/pen.
 3. **Logic Sync:** User explains logic in chat, Coach gives hints (NO CODE).
 4. **Implementation:** User writes code in file, Coach reviews/debugs.
-5. **Senior Mode:** Sundays are Strict Senior Razorpay Mock days.
+5. 
 6. **Target:** Most asked product-based company questions (FAANG/Tier-1 Startups).
 7. **Language Protocol:** Patterns will be explained in pure/simple Hindi for deep understanding, but Technical English terms (interview-ready) will be taught and used alongside.
