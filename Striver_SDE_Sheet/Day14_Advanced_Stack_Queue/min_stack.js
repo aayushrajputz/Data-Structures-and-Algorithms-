@@ -1,58 +1,67 @@
 /**
- * Problem: Min Stack (O(1) Extra Space)
- * Logic: Encoding technique using 2*val - min
- * Time: O(1) for all operations
- * Space: O(1) extra (excluding the stack itself)
+ * LeetCode 155: Min Stack
+ * Logic: O(1) Extra Space using Mathematical Encoding
+ * Pattern: Encoding/Decoding
  */
 
-class MinStack {
-    constructor() {
-        this.stack = [];
-        this.min = Infinity;
+var MinStack = function () {
+    this.stack = [];
+    this.min = Infinity;
+};
+
+/** 
+ * @param {number} val
+ * @return {void}
+ */
+MinStack.prototype.push = function (val) {
+    if (this.stack.length === 0) {
+        this.min = val;
+        this.stack.push(val);
+    } else if (val >= this.min) {
+        this.stack.push(val);
+    } else {
+        // ENCODE: Push a value smaller than val to indicate min change
+        this.stack.push(2 * val - this.min);
+        this.min = val;
     }
+};
 
-    push(val) {
-        if (this.stack.length === 0) {
-            this.min = val;
-            this.stack.push(val);
-        } else if (val >= this.min) {
-            this.stack.push(val);
-        } else {
-            // Encode the new minimum
-            this.stack.push(2 * val - this.min);
-            this.min = val;
-        }
+/**
+ * @return {void}
+ */
+MinStack.prototype.pop = function () {
+    if (this.stack.length === 0) return;
+
+    let top = this.stack.pop();
+    if (top < this.min) {
+        // DECODE: Restore previous minimum
+        this.min = 2 * this.min - top;
     }
+};
 
-    pop() {
-        if (this.stack.length === 0) return;
-
-        let top = this.stack.pop();
-        if (top < this.min) {
-            // Restore previous minimum
-            this.min = 2 * this.min - top;
-        }
+/**
+ * @return {number}
+ */
+MinStack.prototype.top = function () {
+    let top = this.stack[this.stack.length - 1];
+    if (top < this.min) {
+        return this.min; // If encoded, current min is the actual value
     }
+    return top;
+};
 
-    top() {
-        let top = this.stack[this.stack.length - 1];
-        if (top < this.min) {
-            return this.min; // If encoded, min is the actual value
-        }
-        return top;
-    }
+/**
+ * @return {number}
+ */
+MinStack.prototype.getMin = function () {
+    return this.min;
+};
 
-    getMin() {
-        return this.min;
-    }
-}
-
-// --- TEST CASE ---
-let ms = new MinStack();
-ms.push(5);
-ms.push(2);
-ms.push(10);
-console.log("Min after [5, 2, 10]:", ms.getMin()); // Expected: 2
-ms.pop(); // Remove 10
-ms.pop(); // Remove 2
-console.log("Min after popping 10 and 2:", ms.getMin()); // Expected: 5
+/**
+ * Your MinStack object will be instantiated and called as such:
+ * var obj = new MinStack()
+ * obj.push(val)
+ * obj.pop()
+ * var param_3 = obj.top()
+ * var param_4 = obj.getMin()
+ */
