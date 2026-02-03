@@ -1,63 +1,59 @@
 /**
  * Problem: The Celebrity Problem
- * Level: Hard (Optimized)
- * Pattern: Stack-based Elimination
- * Time Complexity: O(N)
- * Space Complexity: O(N) for stack
+ * Level: Medium/Hard
+ * Pattern: Stack-based Elimination (O(N))
+ * Platform Ready: GFG/LeetCode
  */
 
-function findCelebrity(M, n) {
-    let stack = [];
+class Solution {
+    // Function to find if there is a celebrity in the party or not.
+    celebrity(mat) {
+        let n = mat.length;
+        let stack = [];
 
-    // 1. Push all people into the stack
-    for (let i = 0; i < n; i++) {
-        stack.push(i);
-    }
-
-    // 2. Eliminate candidates
-    while (stack.length > 1) {
-        let A = stack.pop();
-        let B = stack.pop();
-
-        // If A knows B, A cannot be a celebrity
-        if (M[A][B] === 1) {
-            stack.push(B);
-        } else {
-            // If A doesn't know B, B cannot be a celebrity
-            stack.push(A);
+        // 1. Load the people into the stack
+        for (let i = 0; i < n; i++) {
+            stack.push(i);
         }
-    }
 
-    let potentialCeleb = stack.pop();
+        // 2. Elimination Phase: Reduce candidates to one potential celebrity
+        while (stack.length > 1) {
+            let a = stack.pop();
+            let b = stack.pop();
 
-    // 3. Verification step
-    for (let i = 0; i < n; i++) {
-        if (i !== potentialCeleb) {
-            // Celebrity should know NO ONE (Row should be 0)
-            // EVERYONE should know Celebrity (Column should be 1)
-            if (M[potentialCeleb][i] === 1 || M[i][potentialCeleb] === 0) {
-                return -1; // No celebrity found
+            // If a knows b, 'a' cannot be celebrity
+            if (mat[a][b] === 1) {
+                stack.push(b);
+            } else {
+                // If a doesn't know b, 'b' cannot be celebrity
+                stack.push(a);
             }
         }
-    }
 
-    return potentialCeleb;
+        // Potential candidate
+        let candidate = stack.pop();
+
+        // 3. Verification Phase: Double-check the candidate
+        for (let i = 0; i < n; i++) {
+            if (i !== candidate) {
+                // Rules:
+                // 1. Celebrity should NOT know anyone (mat[candidate][i] must be 0)
+                // 2. EVERYONE must know the celebrity (mat[i][candidate] must be 1)
+                if (mat[candidate][i] === 1 || mat[i][candidate] === 0) {
+                    return -1; // Fraud!
+                }
+            }
+        }
+
+        return candidate; // King is here! 👑
+    }
 }
 
-// --- TEST CASE ---
-const matrix = [
+// --- LOCAL TESTING ---
+const sol = new Solution();
+const exampleMatrix = [
     [0, 1, 0],
-    [0, 0, 0], // Index 1 is the celebrity
+    [0, 0, 0],
     [0, 1, 0]
 ];
-const n = 3;
-
-console.log("Matrix:");
-console.table(matrix);
-const result = findCelebrity(matrix, n);
-
-if (result === -1) {
-    console.log("No Celebrity found.");
-} else {
-    console.log(`Celebrity identified at Index: ${result}`);
-}
+console.log("Verdict for Local Test Matrix:", sol.celebrity(exampleMatrix));

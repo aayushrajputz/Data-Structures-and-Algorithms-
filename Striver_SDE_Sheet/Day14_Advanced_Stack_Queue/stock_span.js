@@ -1,12 +1,11 @@
 /**
  * Problem: Online Stock Span
- * Level: Medium/Hard
- * Pattern: Monotonic Decreasing Stack (Next Greater Element to Left)
+ * Pattern: Monotonic Stack (Nearest Greater Element to the Left)
  * Time Complexity: O(N)
  * Space Complexity: O(N)
  */
 
-function solveStockSpan(prices) {
+function calculateStockSpan(prices) {
     let n = prices.length;
     let spans = new Array(n);
     let stack = []; // Stores indices
@@ -17,11 +16,11 @@ function solveStockSpan(prices) {
             stack.pop();
         }
 
-        // If stack is empty, it means current price is greater than all previous prices
+        // If stack is empty, current price is the greatest so far
         if (stack.length === 0) {
             spans[i] = i + 1;
         } else {
-            // Span = Current Index - Index of Next Greater Element to the Left
+            // Span = Current Index - Index of Nearest Greater Element to the Left
             spans[i] = i - stack[stack.length - 1];
         }
 
@@ -35,7 +34,9 @@ function solveStockSpan(prices) {
 // --- TEST CASE ---
 const prices = [100, 80, 60, 70, 60, 75, 85];
 console.log("Stock Prices: ", prices);
-const result = solveStockSpan(prices);
+const result = calculateStockSpan(prices);
 console.log("Stock Spans:  ", result);
 
-// Expected Output: [1, 1, 1, 2, 1, 4, 6]
+// Logic Check:
+// For 100: Stack empty -> Span = 0 + 1 = 1
+// For 75: Stack top will be 80 (Index 1). Span = 5 - 1 = 4. Correct!
