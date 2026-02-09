@@ -74,12 +74,30 @@
 
 ## Phase 2: Advanced Data Structures & Logic (The Titan Phase)
 
-### Day 10: Backtracking (The Boss Level) [TODAY'S FOCUS] ♟️
-- [ ] **Problem:** N-Queens (The Classic)
-- [ ] **Problem:** Sudoku Solver
-- [ ] **Problem:** M-Coloring Problem
-- [ ] **Problem:** Rat in a Maze
-- [ ] **Problem:** Word Break (Print all ways)
+### Day 10: Backtracking (The Boss Level) ✅
+- [x] **Problem:** N-Queens (The Classic)
+- [x] **Problem:** Sudoku Solver
+- [x] **Problem:** M-Coloring Problem
+- [x] **Problem:** Rat in a Maze
+- [x] **Problem:** Word Break (Print all ways)
+
+### Day 11-14: Heaps, Stack, Queue (Completed) ✅
+- [x] **Status:** User reports 136 Problems Solved Total.
+
+### Day 15: Strings Part 1 (The Warmup) ✅
+- [x] **Problem:** Reverse Words in a String
+- [x] **Problem:** Longest Common Prefix
+- [x] **Problem:** Roman to Integer
+- [x] **Problem:** String to Integer (Atoi)
+- [x] **Problem:** Longest Palindromic Substring
+- [x] **Algorithm:** Rabin-Karp (Rolling Hash)
+
+### Day 16: Strings Part 2 (The Titan Phase) [TOMORROW'S WAR ROOM] 🎯
+- [ ] **Algorithm:** KMP (Knuth-Morris-Pratt) - *Priority #1*
+- [ ] **Algorithm:** Z-Function
+- [ ] **Problem:** Minimum Characters for Palindrome
+- [ ] **Problem:** Count and Say
+- [ ] **Problem:** Compare Version Numbers
 
 ## The Bhai/Coach Protocol (DO NOT FORGET)
 1. **Pattern First:** Coach will explain the general approach/pattern.
