@@ -99,7 +99,7 @@
 - [x] **Problem:** Count and Say (Simulation)
 - [x] **Problem:** Compare Version Numbers (Parsing)
 
-### Day 17: Binary Trees [7/12 SOLVED] 🌲⚔️
+### Day 17: Binary Trees [COMPLETE] 🌲⚔️
 - [x] Inorder Traversal (Recursive/Iterative)
 - [x] Preorder Traversal (Recursive/Iterative)
 - [x] Postorder Traversal (Recursive/Iterative)
@@ -107,17 +107,19 @@
 - [x] Bottom view of BT
 - [x] Top View of BT
 - [x] Pre, Post, Inorder in one traversal
-- [ ] Morris Inorder/Preorder Traversal (Hard) - **PENDING**
-- [ ] Vertical Order Traversal - **PENDING**
-- [ ] Root to node path in BT - **PENDING**
-- [ ] Maximum Width of BT - **PENDING**
+- [x] Morris Inorder/Preorder Traversal (O(1) Space)
+- [x] Vertical Order Traversal
+- [x] Root to node path in BT
+- [x] Maximum Width of BT
 
-### Day 18: Binary Trees Part 2 [TOMORROW'S WAR] 🎯
-- [ ] Level Order (Zig-Zag)
+### Day 18: Binary Trees Part 2 [ACTIVE WAR] 🎯
+- [x] Level Order (Zig-Zag) ✅
 - [ ] Boundary Traversal (The Wall)
 - [ ] Height / Diameter of BT
 - [ ] Check if Balanced / Identical Trees
 - [ ] LCA in Binary Tree
+- [ ] Same Tree
+
 
 
 ## The Bhai/Coach Protocol (DO NOT FORGET)
