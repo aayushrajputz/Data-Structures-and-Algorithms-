@@ -92,12 +92,20 @@
 - [x] **Problem:** Longest Palindromic Substring
 - [x] **Algorithm:** Rabin-Karp (Rolling Hash)
 
-### Day 16: Strings Part 2 (The Titan Phase) [TOMORROW'S WAR ROOM] 🎯
-- [ ] **Algorithm:** KMP (Knuth-Morris-Pratt) - *Priority #1*
-- [ ] **Algorithm:** Z-Function
-- [ ] **Problem:** Minimum Characters for Palindrome
-- [ ] **Problem:** Count and Say
-- [ ] **Problem:** Compare Version Numbers
+### Day 16: Strings Part 2 (The Titan Phase) ✅
+- [x] **Algorithm:** KMP (Knuth-Morris-Pratt)
+- [x] **Algorithm:** Z-Function
+- [x] **Problem:** Minimum Characters for Palindrome (KMP LPS Logic)
+- [x] **Problem:** Count and Say (Simulation)
+- [x] **Problem:** Compare Version Numbers (Parsing)
+
+### Day 17: Binary Trees [CURRENT WAR] 🌲⚔️
+- [ ] **Problem:** Inorder Traversal
+- [ ] **Problem:** Preorder Traversal
+- [ ] **Problem:** Postorder Traversal
+- [ ] **Problem:** LeftView of Binary Tree
+- [ ] **Problem:** Bottom View of Binary Tree
+- [ ] **Problem:** Top View of Binary Tree
 
 ## The Bhai/Coach Protocol (DO NOT FORGET)
 1. **Pattern First:** Coach will explain the general approach/pattern.
