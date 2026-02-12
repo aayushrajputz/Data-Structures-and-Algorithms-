@@ -99,13 +99,26 @@
 - [x] **Problem:** Count and Say (Simulation)
 - [x] **Problem:** Compare Version Numbers (Parsing)
 
-### Day 17: Binary Trees [CURRENT WAR] 🌲⚔️
-- [ ] **Problem:** Inorder Traversal
-- [ ] **Problem:** Preorder Traversal
-- [ ] **Problem:** Postorder Traversal
-- [ ] **Problem:** LeftView of Binary Tree
-- [ ] **Problem:** Bottom View of Binary Tree
-- [ ] **Problem:** Top View of Binary Tree
+### Day 17: Binary Trees [7/12 SOLVED] 🌲⚔️
+- [x] Inorder Traversal (Recursive/Iterative)
+- [x] Preorder Traversal (Recursive/Iterative)
+- [x] Postorder Traversal (Recursive/Iterative)
+- [x] Left/Right View of BT
+- [x] Bottom view of BT
+- [x] Top View of BT
+- [x] Pre, Post, Inorder in one traversal
+- [ ] Morris Inorder/Preorder Traversal (Hard) - **PENDING**
+- [ ] Vertical Order Traversal - **PENDING**
+- [ ] Root to node path in BT - **PENDING**
+- [ ] Maximum Width of BT - **PENDING**
+
+### Day 18: Binary Trees Part 2 [TOMORROW'S WAR] 🎯
+- [ ] Level Order (Zig-Zag)
+- [ ] Boundary Traversal (The Wall)
+- [ ] Height / Diameter of BT
+- [ ] Check if Balanced / Identical Trees
+- [ ] LCA in Binary Tree
+
 
 ## The Bhai/Coach Protocol (DO NOT FORGET)
 1. **Pattern First:** Coach will explain the general approach/pattern.
