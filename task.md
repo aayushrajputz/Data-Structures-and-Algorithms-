@@ -112,13 +112,18 @@
 - [x] Root to node path in BT
 - [x] Maximum Width of BT
 
-### Day 18: Binary Trees Part 2 [ACTIVE WAR] 🎯
+### Day 18: Binary Trees Part 2 [ACTIVE WAR - 65% TOTAL PROGRESS] 🎯
 - [x] Level Order (Zig-Zag) ✅
-- [ ] Boundary Traversal (The Wall)
-- [ ] Height / Diameter of BT
-- [ ] Check if Balanced / Identical Trees
-- [ ] LCA in Binary Tree
-- [ ] Same Tree
+- [x] Height / Diameter of BT ✅
+- [x] Check if Balanced ✅
+- [x] Boundary Traversal ✅
+
+- [x] Identical Trees / Symmetric Tree ✅
+- [ ] LCA in Binary Tree (Final Boss)
+
+
+
+
 
 
 
