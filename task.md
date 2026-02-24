@@ -139,7 +139,24 @@
 
 
 
+### Day 20: Binary Search Tree Part 1 [ACTIVE WAR] 🎯
+- [ ] Populate Next Right Pointers of Tree
+- [x] Search in a BST ✅
+
+- [x] Construct BST from sorted array ✅
+
+
+- [ ] Construct BST from preorder traversal
+- [x] Check if a binary tree is BST ✅
+
+
+- [x] Lowest Common Ancestor in a BST ✅
+
+
+- [ ] Inorder Predecessor/Successor in BST
+
 ## The Bhai/Coach Protocol (DO NOT FORGET)
+
 
 1. **Pattern First:** Coach will explain the general approach/pattern.
 2. **Paper Dry Run:** User will dry run on physical notebook/pen.
