@@ -1,5 +1,7 @@
-# DSA God Mode - Daily Task Tracker [PROGRESS: 70% 🎯]
-## STATS: 158 Total | 25 Hard 🌋 | 85 Medium 🛡️ | 48 Easy 🏎️
+# DSA God Mode - Daily Task Tracker [PROGRESS: 75% 🎯]
+
+## STATS: 167 Total | 25 Hard 🌋 | 90 Medium 🛡️ | 52 Easy 🏎️
+
 
 
 > [!IMPORTANT]
@@ -151,13 +153,17 @@
 
 - [x] Inorder Predecessor/Successor in BST ✅
 
-### Day 21: Binary Search Tree Part 2 [ACTIVE WAR] 🎯
-- [ ] Floor and Ceil in a BST [ACTIVE] 🏗️
-- [ ] K-th smallest and largest element in BST
-- [ ] Find a pair with a given sum in BST
-- [ ] BST Iterator
-- [ ] Size of largest BST in Binary Tree (Hard) 🌋
-- [ ] Serialize and Deserialize Binary Tree (Hard) 🌋
+### Day 21: BST Part 2 & Miscellaneous [THE FINALE] 🎯
+- [x] Floor and Ceil in a BST ✅
+- [x] K-th smallest and largest element in BST ✅
+- [x] Find a pair with a given sum in BST ✅
+- [x] BST Iterator ✅
+- [ ] Size of largest BST in Binary Tree (Hard) [ACTIVE] 🌋🏹
+- [ ] Serialize and Deserialize Binary Tree (Hard) [ACTIVE] 🌋🏗️
+- [ ] Binary Tree to Double Linked List (Miscellaneous) 🔗
+- [ ] Median in a stream (Miscellaneous/Heaps) 🌊
+- [ ] K-th largest element in a stream (Miscellaneous/Heaps) 📈
+
 
 
 
