@@ -139,21 +139,27 @@
 
 
 
-### Day 20: Binary Search Tree Part 1 [ACTIVE WAR] 🎯
-- [ ] Populate Next Right Pointers of Tree
+### Day 20: Binary Search Tree Part 1 [ACTIVE WAR - RESTART] 🎯
 - [x] Search in a BST ✅
-
 - [x] Construct BST from sorted array ✅
-
-
-- [ ] Construct BST from preorder traversal
 - [x] Check if a binary tree is BST ✅
-
-
 - [x] Lowest Common Ancestor in a BST ✅
 
+- [x] Construct BST from preorder traversal ✅
 
-- [ ] Inorder Predecessor/Successor in BST
+- [x] Populate Next Right Pointers of Tree ✅
+
+- [x] Inorder Predecessor/Successor in BST ✅
+
+### Day 21: Binary Search Tree Part 2 [ACTIVE WAR] 🎯
+- [ ] Floor and Ceil in a BST [ACTIVE] 🏗️
+- [ ] K-th smallest and largest element in BST
+- [ ] Find a pair with a given sum in BST
+- [ ] BST Iterator
+- [ ] Size of largest BST in Binary Tree (Hard) 🌋
+- [ ] Serialize and Deserialize Binary Tree (Hard) 🌋
+
+
 
 ## The Bhai/Coach Protocol (DO NOT FORGET)
 
