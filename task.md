@@ -1,6 +1,9 @@
-# DSA God Mode - Daily Task Tracker [PROGRESS: 75% 🎯]
+# DSA God Mode - Daily Task Tracker [PROGRESS: 80% 🎯]
 
-## STATS: 167 Total | 25 Hard 🌋 | 90 Medium 🛡️ | 52 Easy 🏎️
+
+
+## STATS: 172 Total | 29 Hard 🌋 | 91 Medium 🛡️ | 52 Easy 🏎️
+
 
 
 
@@ -158,11 +161,18 @@
 - [x] K-th smallest and largest element in BST ✅
 - [x] Find a pair with a given sum in BST ✅
 - [x] BST Iterator ✅
-- [ ] Size of largest BST in Binary Tree (Hard) [ACTIVE] 🌋🏹
-- [ ] Serialize and Deserialize Binary Tree (Hard) [ACTIVE] 🌋🏗️
-- [ ] Binary Tree to Double Linked List (Miscellaneous) 🔗
-- [ ] Median in a stream (Miscellaneous/Heaps) 🌊
-- [ ] K-th largest element in a stream (Miscellaneous/Heaps) 📈
+- [x] Size of largest BST in Binary Tree (Hard) ✅ 🌋🏹
+
+- [x] Serialize and Deserialize Binary Tree (Hard) ✅ 🌋🏗️
+
+
+- [x] Binary Tree to Double Linked List (Miscellaneous) ✅ 🔗
+
+- [x] Median in a stream (Miscellaneous/Heaps) ✅ 🌊🌋
+
+- [x] K-th largest element in a stream (Miscellaneous/Heaps) ✅ 📈🏹
+
+
 
 
 
