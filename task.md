@@ -1,4 +1,5 @@
-# DSA God Mode - Daily Task Tracker [PROGRESS: 80% 🎯]
+# DSA God Mode - Daily Task Tracker [PROGRESS: 80% 🎯 - GRAPH INVASION]
+
 
 
 
@@ -180,7 +181,15 @@
 ## The Bhai/Coach Protocol (DO NOT FORGET)
 
 
-1. **Pattern First:** Coach will explain the general approach/pattern.
+### Day 23: Graphs Part 1 (The Invasion) [ACTIVE] ⚔️🌋
+- [x] Graph Representation (Adjacency List) ✅
+- [x] BFS in Graph ✅
+
+- [ ] DFS in Graph [ACTIVE] 🏹
+
+- [ ] Cycle Detection in Undirected Graph 🔄
+- [ ] Cycle Detection in Directed Graph ⚔️
+
 2. **Paper Dry Run:** User will dry run on physical notebook/pen.
 3. **Logic Sync:** User explains logic in chat, Coach gives hints (NO CODE).
 4. **Implementation:** User writes code in file, Coach reviews/debugs.
