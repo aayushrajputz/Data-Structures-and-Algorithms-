@@ -185,9 +185,8 @@
 - [x] Graph Representation (Adjacency List) ✅
 - [x] BFS in Graph ✅
 
-- [ ] DFS in Graph [ACTIVE] 🏹
-
-- [ ] Cycle Detection in Undirected Graph 🔄
+- [x] DFS in Graph ✅
+- [ ] Cycle Detection in Undirected Graph [ACTIVE] 🔄
 - [ ] Cycle Detection in Directed Graph ⚔️
 
 2. **Paper Dry Run:** User will dry run on physical notebook/pen.

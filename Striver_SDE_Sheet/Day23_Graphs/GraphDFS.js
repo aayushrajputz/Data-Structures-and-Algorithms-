@@ -1,30 +1,34 @@
 /**
  * MISSION: Depth First Search (DFS) in Graph
- * STRATEGY: Recursion (Stack) + Visited Array 🛡️
- * TARGET: Deep Path Exploration 🔥
+ * STRATEGY: Recursion (Internal Stack) + Visited Array 🛡️
+ * TARGET: Deep Path Exploration (Exploring every island) 🔥
  */
 
 class Solution {
     // Function to return a list containing the DFS traversal of the graph.
     dfsOfGraph(V, adj) {
-        let vis = new Array(V).fill(false);
-        let ls = [];
+        let visited = new Array(V).fill(false);
+        let result = [];
 
-        // DFS starting from 0
-        this.dfs(0, adj, vis, ls);
+        // Handle Disconnected Components (Islands) 🏝️🏹
+        for (let i = 0; i < V; i++) {
+            if (!visited[i]) {
+                this.dfsHelper(i, adj, visited, result);
+            }
+        }
 
-        return ls;
+        return result;
     }
 
-    dfs(node, adj, vis, ls) {
-        // 1. Mark visited and add to result
-        vis[node] = true;
-        ls.push(node);
+    dfsHelper(node, adj, visited, result) {
+        // 1. Mark the current node as visited and add to result 🎨
+        visited[node] = true;
+        result.push(node);
 
-        // 2. Explore neighbors recursively
+        // 2. Explore all neighbors recursively 🏹
         for (let it of adj[node]) {
-            if (!vis[it]) {
-                this.dfs(it, adj, vis, ls);
+            if (!visited[it]) {
+                this.dfsHelper(it, adj, visited, result);
             }
         }
     }
