@@ -32,41 +32,27 @@ class MinHeap {
 }
 
 /**
- * MISSION: Network Delay Time (Dijkstra Mastery)
- * TARGET: LeetCode 743 🛡️
+ * MISSION: Path With Minimum Effort (Dijkstra on 2D Grid)
+ * TARGET: LeetCode 1631 🏔️
  * 
- * @param {number[][]} times
- * @param {number} n
- * @param {number} k
+ * @param {number[][]} heights
  * @return {number}
  */
-var networkDelayTime = function (times, n, k) {
-    // 1. Build Adjacency List
-    // times[i] = [u, v, w] -> u se v jane mein w time
-    let adj = Array.from({ length: n + 1 }, () => []);
+var minimumEffortPath = function (heights) {
+    let rows = heights.length;
+    let cols = heights[0].length;
 
-    for (let [u, v, w] of times) {
-        adj[u].push([v, w]);
+    // 1. DISTANCE MATRIX 
+    // Instead of a 1D dist array, we need a 2D dist matrix initialized to Infinity.
+    // (Hint: Array.from({length: rows}, () => new Array(cols).fill(Infinity)))
 
-    }
-    let dist = new Array(n + 1).fill(Infinity)
-    dist[k] = 0
-    let pq = new MinHeap()
-    pq.push([0, k])
+    // 2. PRIORITY QUEUE SETUP
+    // pq format: [current_effort, r, c]
+    let pq = new MinHeap();
 
-    while (pq.size() > 0) {
-        let [time, u] = pq.pop()
-        if (time > dist[u]) continue;
-        for (let [v, w] of adj[u]) {
-            if (time + w < dist[v]) {
-                dist[v] = time + w
-                pq.push([dist[v], v])
-            }
-        }
+    // 3. DIRECTIONS (Up, Right, Down, Left)
+    let directions = [[-1, 0], [0, 1], [1, 0], [0, -1]];
 
-    }
-    let maxTime = 0;
-    maxTime = Math.max(...dist.slice(1));
-    return maxTime === Infinity ? -1 : maxTime;
+    // TODO: Write your Dijkstra While Loop here! 📝
 
 };
