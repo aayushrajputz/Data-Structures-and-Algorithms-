@@ -53,6 +53,42 @@ var minimumEffortPath = function (heights) {
     // 3. DIRECTIONS (Up, Right, Down, Left)
     let directions = [[-1, 0], [0, 1], [1, 0], [0, -1]];
 
-    // TODO: Write your Dijkstra While Loop here! 📝
+    let dist = Array.from({ length: rows }, () => new Array(cols).fill(Infinity))
 
+    dist[0][0] = 0;
+    pq.push([0, 0, 0])
+
+    while (pq.size() > 0) {
+        let [eff, r, c] = pq.pop();
+        if (r == rows - 1 && c == cols - 1) return eff;
+        if (dist[r][c] < eff) continue;
+
+        for (let [dr, dc] of directions) {
+            let nr = r + dr
+            let nc = c + dc
+            if (nr >= 0 && nr < rows && nc >= 0 && nc < cols) {
+                let newEff = Math.abs(heights[nr][nc] - heights[r][c])
+
+                let pathEff = Math.max(eff, newEff)
+                if (pathEff < dist[nr][nc]) {
+                    dist[nr][nc] = pathEff;
+                    pq.push([pathEff, nr, nc])
+                }
+
+            }
+        }
+
+
+    }
+    return 0
 };
+/* 
+ * target_file: c:\Users\aayus\OneDrive\Desktop\DSA\Striver_SDE_Sheet\Day24_ShortestPaths\PathWithMinimumEffort.js 
+ */
+
+// --- TEST CASES ---
+const heights1 = [[1, 2, 2], [3, 8, 2], [5, 3, 5]];
+console.log("TEST 1 (Expected 2):", minimumEffortPath(heights1));
+
+const heights2 = [[1, 2, 3], [3, 8, 4], [5, 3, 5]];
+console.log("TEST 2 (Expected 1):", minimumEffortPath(heights2));
