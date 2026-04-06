@@ -1,26 +1,61 @@
-/**
- * Floyd-Warshall Algorithm: All-Pairs Shortest Path
- * Time Complexity: O(V^3)
- * Space Complexity: O(V^2) (in-place modification of the matrix)
- */
-
 function shortest_distance(matrix) {
     let n = matrix.length;
+    const INF = 1e9;
 
-    // YOUR TASK:
-    // 1. Initialize logic (if needed)
-    // 2. Triple nested loop (k, i, j)
-    // 3. Update matrix[i][j] using matrix[i][k] + matrix[k][j]
+    // Phase 1: Pre-process
+    for (let i = 0; i < n; i++) {
+        for (let j = 0; j < n; j++) {
+            if (matrix[i][j] === -1 || matrix[i][j] >= 1e8) {
+                matrix[i][j] = INF;
+            }
+            if (i === j) matrix[i][j] = 0;
+        }
+    }
+
+    // Phase 2: Triple Loop Engine
+    for (let k = 0; k < n; k++) {
+        for (let i = 0; i < n; i++) {
+            for (let j = 0; j < n; j++) {
+                // IMPORTANT: Addition only if path exists (Avoid INF + weight < INF logic)
+                if (matrix[i][k] !== INF && matrix[k][j] !== INF) {
+                    if (matrix[i][j] > matrix[i][k] + matrix[k][j]) {
+                        matrix[i][j] = matrix[i][k] + matrix[k][j];
+                    }
+                }
+            }
+        }
+    }
+
+    // Phase 3: Post-process
+    for (let i = 0; i < n; i++) {
+        for (let j = 0; j < n; j++) {
+            if (matrix[i][j] >= 1e8) { // Target any huge value including INF
+                matrix[i][j] = -1;
+            }
+        }
+    }
 }
 
-// Example Matrix (GfG style)
-// -1 represents Infinity (no path)
+// Phase 3: Post-process (Restore -1 for GfG Format) 🏔️👑
+for (let i = 0; i < n; i++) {
+    for (let j = 0; j < n; j++) {
+        if (matrix[i][j] >= INF) {
+            matrix[i][j] = -1;
+        }
+    }
+}
+
+return matrix;
+
+
+// TEST CASE FROM YOUR SCREENSHOT (The 4-City Monster!) 🚥🎰🎬
 let matrix = [
-    [0, 1, 43],
-    [1, 0, 6],
-    [-1, -1, 0]
+    [0, -1, 5, 100000000],
+    [6, 0, 5, 1],
+    [1, 5, 0, 100000000],
+    [6, 100000000, 2, 0]
 ];
 
-// After Floyd-Warshall, matrix should contain shortest distances
-// shortest_distance(matrix);
-// console.log(matrix);
+shortest_distance(matrix);
+console.log("TITAN'S MATRIX RESULT:");
+console.log(matrix);
