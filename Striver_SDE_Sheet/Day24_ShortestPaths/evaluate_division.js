@@ -23,8 +23,6 @@ var calcEquation = function (equations, values, queries) {
     for (let k = 0; k < n; k++) {
         for (let i = 0; i < n; i++) {
             for (let j = 0; j < n; j++) {
-                // PRECISION FIX: Only update if matrix[i][j] was unknown (-1.0)
-                // This preserves direct edges and more stable paths from being overwritten.
                 if (matrix[i][j] === -1.0 && matrix[i][k] !== -1.0 && matrix[k][j] !== -1.0) {
                     matrix[i][j] = matrix[i][k] * matrix[k][j];
                 }

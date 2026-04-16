@@ -12,7 +12,9 @@ class DisjointSet {
     unionBySize(u, v) {
         let ulp = this.find(u);
         let ulu = this.find(v);
-        if (ulp === ulu) return;
+        if (ulp === ulu) {
+            return;
+        }
         if (this.size[ulp] < this.size[ulu]) {
             this.parent[ulp] = ulu;
             this.size[ulu] += this.size[ulp];
@@ -20,39 +22,29 @@ class DisjointSet {
             this.parent[ulu] = ulp;
             this.size[ulp] += this.size[ulu];
         }
+        return this.parent;
     }
+
 }
 
-/**
- * @param {number[][]} points
- * @return {number}
- */
-var minCostConnectPoints = function (points) {
-    let n = points.length;
+function minCostToSupplyWater(n, wells, pipes) {
     let edges = [];
-
-    for (let i = 0; i < n; i++) {
-        for (let j = i + 1; j < n; j++) {
-            let dist = Math.abs(points[i][0] - points[j][0]) + Math.abs(points[i][1] - points[j][1]);
-            edges.push([i, j, dist]);
-        }
+    for (let i = 0; i < wells.length; i++) {
+        edges.push([0, i + 1, wells[i]])
     }
+    edges.push(...pipes);
     edges.sort((a, b) => a[2] - b[2]);
-
-    const ds = new DisjointSet(n);
-    let minCost = 0;
-    let edgesCount = 0;
-
+    let ds = new DisjointSet(n);
+    let cost = 0;
     for (let [u, v, w] of edges) {
         if (ds.find(u) !== ds.find(v)) {
             ds.unionBySize(u, v);
-            minCost += w;
-            edgesCount++;
+            cost = cost + w
         }
     }
-    return edgesCount === n - 1 ? minCost : -1;
-};
+    return cost;
+}
 
 // TEST CASE
-let points = [[0, 0], [2, 2], [3, 10], [5, 2], [7, 0]];
-console.log("Min Cost:", minCostConnectPoints(points)); // Expected Output: 20
+let n = 3, wells = [1, 2, 2], pipes = [[1, 2, 1], [2, 3, 1]];
+console.log("Min Cost:", minCostToSupplyWater(n, wells, pipes)); // Expected: 3
