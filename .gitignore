@@ -13,3 +13,7 @@ final_master_plan.md
 .planning/COACH_IS_READY.md
 .planning/COACH_IS_READY.md.resolved
 .planning/COACH_IS_READY.md.resolved
+.env
+*.env
+node_modules/
+**/node_modules/

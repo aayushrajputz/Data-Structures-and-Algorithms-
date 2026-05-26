@@ -69,6 +69,27 @@ function frogJumpTabulation(heights) {
     return dp[n - 1]
 
 }
+
+//  space optimized 
+
+function frogJumpSpaceOptimized(heights) {
+    const n = heights.length
+    if (n <= 1) return 0;
+    let prev = 0;
+    let prev2 = 0;
+
+    for (let i = 1; i < n; i++) {
+        let jumpOne = prev + Math.abs(heights[i] - heights[i - 1])
+        let jumpTwo = Infinity;
+        if (i - 2 >= 0) jumpTwo = prev2 + Math.abs(heights[i] - heights[i - 2]);
+        let curr = Math.min(jumpOne, jumpTwo)
+        prev2 = prev
+        prev = curr
+    }
+    return prev
+}
+
 console.log(frogJumpRecursive([10, 20, 30, 10]))
 console.log(frogJumpMemo([10, 20, 30, 10]))
 console.log(frogJumpTabulation([10, 20, 30, 10]))
+console.log(frogJumpSpaceOptimized([10, 20, 30, 10]))
