@@ -23,4 +23,4 @@ console.log("Test Case 1 [2, 3, -2, 4]:", maxProduct([2, 3, -2, 4])); // Expecte
 console.log("Test Case 2 [-2, 3, -4]:", maxProduct([-2, 3, -4]));     // Expected: 24
 console.log("Test Case 3 [-2, 0, -1]:", maxProduct([-2, 0, -1]));     // Expected: 0
 
-module.exports = { maxProduct };
+module.exports = { maxProduct }; 
