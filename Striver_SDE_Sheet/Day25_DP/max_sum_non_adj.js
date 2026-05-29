@@ -63,4 +63,4 @@ function maxSumSpace(nums) {
 console.log(maxSumRecursive([1, 10, 3, 4, 5]))
 console.log(maxSumMemo([1, 10, 3, 4, 5]))
 console.log(maxSumTab([1, 10, 3, 4, 5]))
-console.log(maxSumSpace([1, 10, 3, 4, 5]))
+console.log(maxSumSpace([1, 10, 3, 4, 5])) 
