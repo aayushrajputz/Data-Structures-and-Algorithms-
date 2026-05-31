@@ -20,5 +20,5 @@ function subsetSum(arr) {
     return solve(n - 1, k)
 }
 
-arr = [1, 2, 3, 4], k = 5
-console.log(subsetSum(arr, k))
+arr = [1, 2, 3, 4]
+console.log(subsetSum(arr))
