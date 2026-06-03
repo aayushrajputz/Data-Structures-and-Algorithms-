@@ -19,20 +19,20 @@ function palindromePartition3(s, k) {
     // 2. 2D DP Memoization Table
     let dp = Array.from({ length: n }, () => new Array(k + 1).fill(-1));
 
-    function solve(i, partsLeft) {
+    function solve(i, k) {
         // Base case: if we need to divide into 1 part, the cost is to make the rest of the string a palindrome
-        if (partsLeft === 1) return cost[i][n - 1];
-        if (dp[i][partsLeft] !== -1) return dp[i][partsLeft];
+        if (k === 1) return cost[i][n - 1];
+        if (dp[i][k] !== -1) return dp[i][k];
 
         let minChanges = Infinity;
 
         // Try partitioning at every index j from i to n - partsLeft
-        for (let j = i; j <= n - partsLeft; j++) {
-            let currentCost = cost[i][j] + solve(j + 1, partsLeft - 1);
+        for (let j = i; j <= n - k; j++) {
+            let currentCost = cost[i][j] + solve(j + 1, k - 1);
             minChanges = Math.min(minChanges, currentCost);
         }
 
-        return dp[i][partsLeft] = minChanges;
+        return dp[i][k] = minChanges;
     }
 
     return solve(0, k);

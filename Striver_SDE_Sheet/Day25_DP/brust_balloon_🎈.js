@@ -10,7 +10,7 @@ function MaxCoins(nums) {
         if (i > j) return 0;
         if (dp[i][j] !== -1) return dp[i][j];
 
-        let ans = -Infinity;
+        let ans = 0;
         for (let k = i; k <= j; k++) {
             let tempCost = solve(i, k - 1) + solve(k + 1, j) + (nums[i - 1] * nums[k] * nums[j + 1]);
             ans = Math.max(ans, tempCost);
