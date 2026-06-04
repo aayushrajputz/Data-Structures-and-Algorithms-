@@ -52,24 +52,37 @@ Har DSA sawal solve karne ke baad, Aayush neeche diye gaye structure mein **Verb
 
 ---
 
-## 🔥 STRICT DAILY PRACTICE WORKFLOW (3-Platform Grind)
+## 🔥 STRICT DAILY PRACTICE WORKFLOW (Updated June 2026)
 
-Har din naya pattern seekhne ke baad, yeh 3 steps **strictly** follow karne hain:
+### Phase A: DSA Completion (Next ~2 Weeks)
+**Remaining:** DP Part-2 (Grid DP, etc.) + Trie → Then DSA is DONE.
 
-### Step 1: Striver SDE Sheet → Naya Pattern Seekho (Theory + Logic)
-- Pehle pattern ka concept samjho (recursive → memoized → tabulation).
-- Striver Sheet ke problems solve karo with full understanding.
+#### Daily Routine (During DSA Phase):
+**Step 1:** Striver SDE Sheet → Naya Pattern seekho (Theory + Logic)
+- Pattern ka concept samjho (recursive → memoized → tabulation).
+- Sheet ke problems solve karo with full understanding.
 
-### Step 2: LeetCode → Usi Pattern ke 2-3 Problems Solve Karo
+**Step 2:** LeetCode → Usi Pattern ke 2-3 Extra Problems Solve Karo
 - Same pattern ke LeetCode problems dhundho aur solve karo.
-- Contest rating badhane ke liye **har Sunday Weekly Contest** dena mandatory hai.
+- **Har Sunday Weekly Contest** dena mandatory hai.
 - **Target: Knight Badge (1900+ Rating)**.
 
-### Step 3: HackerRank → Wahi Same Pattern ke 1-2 OA-Style Problems Karo
-- HackerRank par usi pattern ke OA-style problems solve karo.
-- Yeh placement season ke OA rounds ke liye directly helpful hoga.
+> **Rule:** Jab tak dono steps complete nahi hote, pattern "done" nahi maana jayega.
 
-> **Rule**: Jab tak teeno steps complete nahi hote, pattern "done" nahi maana jayega.
-> Ek pattern 3 platforms par practice = permanent memory mein fix.
+---
+
+### Phase B: OA & Interview Prep (After DSA Completion)
+Jab DSA patterns fully complete ho jayenge, tab:
+
+**Step 1:** HackerRank → OA-Style Problems Solve Karo
+- Company-specific OA patterns practice karo (Goldman Sachs, Amazon, etc.).
+- Input parsing aur boilerplate handling seekho.
+
+**Step 2:** LeetCode Random + Contest Grind
+- Random problems for speed building.
+- Weekly contests for rating push towards Knight.
+
+**Step 3:** LLD (Low-Level Design) Start
+- SOLID principles, Design Patterns, Case Studies.
 
 ---
