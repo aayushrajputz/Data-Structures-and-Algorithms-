@@ -11,6 +11,8 @@
 - **LLD (Low-Level Design) Mastery**: 
     - Start from pure basics (Interfaces, SOLID).
     - Design patterns (Factory, Strategy, Observer, etc.).
+    - REST API Design (RESTful standards, status codes, request-response lifecycles).
+    - GraphQL (Schema design, Resolvers, Mutations, Queries).
     - Famous Case Studies (Parking Lot, BookMyShow, Uber) from scratch.
     - **Language**: TypeScript (Learned in 1-2 days parallelly).
 - **Striver Revision (2nd Pass)**: 
@@ -22,6 +24,8 @@
 - **Goal**: Transition from Architect to System Designer.
 - **HLD (High-Level Design)**: 
     - Start from absolute basics of HLD.
+    - REST vs GraphQL vs gRPC comparison & deep-dive.
+    - gRPC & Protocol Buffers (Service-to-service communication, HTTP/2, streaming).
     - Advanced architectures (Uber, WhatsApp, Netflix).
     - Database Schema Design, Caching, Load Balancing, CDN.
     - **Language**: Go internals (Goroutines, Channels, Mutex).
