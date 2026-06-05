@@ -1,3 +1,6 @@
+/* Jab bhi formula mein [i + 1] dikhe, toh i ka loop ulta (n-1 se 0) chalao. 
+        Taaki niche wali row pehle bhar jaye.*/
+
 function palindromePartition3(s, k) {
     let n = s.length;
     if (n === 0) return 0;

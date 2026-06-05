@@ -1,6 +1,6 @@
-function coinOnTheTable(k, board) {
+function coinOnTheTable(m, k, board) {
     let n = board.length;
-    let col = board[0].length;
+    let col = board[0].length; // board[0].length and col are same as 'm'
 
     // 3D DP Array: size n x col x (k + 1) filled with -1
     let dp = Array.from({ length: n }, () =>
@@ -44,6 +44,7 @@ function coinOnTheTable(k, board) {
     let result = solve(0, 0, 0);
     return result === Infinity ? -1 : result;
 }
+
 
 // Test Case
 const board = [

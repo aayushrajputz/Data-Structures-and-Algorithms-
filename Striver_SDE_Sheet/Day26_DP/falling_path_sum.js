@@ -18,11 +18,11 @@ function fallingPathSum(matrix) {
         return dp[i][j] = matrix[i][j] + Math.min(down, downLeft, downRight);
     }
 
-    let ans = Infinity;
+    let ans = Infinity
     for (let j = 0; j < n; j++) {
-        ans = Math.min(ans, solve(0, j));
+        ans = Math.min(ans, solve(0, j))
     }
-    return ans;
+    return ans
 }
 
-console.log(fallingPathSum([[2, 5, 8], [6, 4, 7], [0, 5, 3]])); // Expected: 13 (2 -> 6 -> 5, or 2 -> 4 -> 7 -> etc. wait, 2 + 6 + 5 = 13)
+console.log(fallingPathSum([[2, 5, 8], [6, 4, 7], [0, 5, 3]])); // Expected: 13 (2 -> 6 -> 5, or 2 -> 4 -> 7 -> etc. wait, 2 + 6 + 5 = 13)  
