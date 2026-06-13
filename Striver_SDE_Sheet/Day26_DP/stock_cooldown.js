@@ -29,4 +29,4 @@ function maxProfit(prices) {
 }
 
 let prices = [1, 2, 3, 0, 2];
-console.log(maxProfit(prices)); // Expected: 3
+console.log(maxProfit(prices));

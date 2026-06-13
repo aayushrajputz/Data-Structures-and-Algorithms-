@@ -30,4 +30,4 @@ let buyfee = 2;
 let sellfee = 3;
 let cap = 2; // Cooldown of 2 days
 
-console.log(maxProfit(prices, buyfee, sellfee, cap)); // Expected Output: 35
+console.log(maxProfit(prices, buyfee, sellfee, cap));
