@@ -7,14 +7,22 @@
 - **Milestone**: 180+ Problems solved and visualized.
 
 ## Phase 2: Architect & Revision (February - March 2026)
-- **Focus**: Pure LLD and DSA Mastery. No HLD yet.
-- **LLD (Low-Level Design) Mastery**: 
-    - Start from pure basics (Interfaces, SOLID).
-    - Design patterns (Factory, Strategy, Observer, etc.).
-    - REST API Design (RESTful standards, status codes, request-response lifecycles).
-    - GraphQL (Schema design, Resolvers, Mutations, Queries).
-    - Famous Case Studies (Parking Lot, BookMyShow, Uber) from scratch.
-    - **Language**: TypeScript (Learned in 1-2 days parallelly).
+- **LLD (Low-Level Design) & Backend Mastery (Simplified & Deep)**: 
+    - **SOLID & OOPs**: Deep dive into core Object-Oriented principles and SOLID rules from absolute basics.
+    - **Design Patterns (Slow & Conceptual)**:
+        - *Real-world Problem*: Identify the coding nightmare/spaghetti code that arises *without* the design pattern.
+        - *Pattern Solution*: Learn how the design pattern elegantly solves that specific structural issue.
+        - *Scratch Implementation*: Write clean code class-by-class, applying design principles manually.
+        - *Core Patterns*: Singleton, Factory, Strategy, Observer, State, Decorator, Facade.
+    - **REST API Design and  GRAPHQL  from Scratch**: Production-grade API structuring, request-response lifecycles, standard status codes, input validations, and error handling.
+    - **Database Schema Design**:
+        - Tables & Collection structure, normalization, relational mapping.
+        - Relationships (One-to-One, One-to-Many, Many-to-Many).
+        - Indexing strategies (how to make queries fast) and transactional safety (ACID properties).
+        - Live conceptualization of standard schemas (E-commerce orders DB, Booking DB, Uber, etc.).
+        - *SQL practice* will be done independently by Aayush on the side.
+    - **Famous Case Studies**: Live implementation of Parking Lot, BookMyShow, Splitwise from scratch.
+    - **Language**: TypeScript (learned parallelly as needed).
 - **Striver Revision (2nd Pass)**: 
     - Re-solve the sheet to cement patterns.
     - Focus on speed and optimization.
