@@ -56,3 +56,15 @@ class trie {
         curr.cntEnd--;
     }
 }
+
+// Test cases to verify the implementation
+const t = new trie();
+t.insert("apple");
+t.insert("apple");
+t.insert("apps");
+console.log("Count equal to 'apple':", t.countWordsEqualTo("apple")); // Expected: 2
+console.log("Count starting with 'app':", t.countWordsStartingWith("app")); // Expected: 3
+t.erase("apple");
+console.log("Count equal to 'apple' after erasing one:", t.countWordsEqualTo("apple")); // Expected: 1
+console.log("Count starting with 'app' after erasing one apple:", t.countWordsStartingWith("app")); // Expected: 2
+
