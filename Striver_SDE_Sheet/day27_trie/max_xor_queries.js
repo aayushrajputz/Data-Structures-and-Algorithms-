@@ -74,6 +74,30 @@ class Trie {
 }
 
 function maximizeXor(nums, queries) {
-    // TODO: Implement the queries logic here using offline queries approach
-    return [];
+    nums.sort((a, b) => a - b)
+    let sortQureies = queries.map((q, i) => [q[0], q[1], i])
+    sortQureies.sort((a, b) => a[1] - b[1])
+    let ans = new Array(queries.length)
+    let trie = new Trie()
+
+
+    // Sort queries by Mi
+    let idx = 0;
+    for (let i = 0; i < sortQureies.length; i++) {
+        const [Xi, Mi, originalIndex] = sortQureies[i];
+
+        while (idx < nums.length && nums[idx] <= Mi) {
+            trie.insert(nums[idx])
+            idx++
+        }
+
+
+        // Calculate max XOR
+        ans[originalIndex] = trie.getMax(Xi)
+    }
+    return ans;
 }
+
+const nums = [0, 1, 2, 3, 4];
+const queries = [[3, 1], [1, 3], [5, 6]];
+console.log("Results:", maximizeXor(nums, queries)); // Expected: [3, 3, 7]
