@@ -7,12 +7,11 @@ function findmin(nums) {
         let mid = Math.floor((low + high) / 2)
         ans = Math.min(ans, nums[mid])
 
-        if (nums[low] <= nums[mid]) {
-            low = mid + 1
-        } else {
-            high = mid - 1
+        if (nums[low] <= nums[high]) {
+            ans = Math.min(ans, nums[low]);
             break;
         }
+
 
 
 
